@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <title>Aesthetic Study Timer</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Aesthetic Study Timer</h1>
+
+            <!-- Timer Section -->
+            <div id="timer-container">
+                <h2>Choose Your Timer</h2>
+                <select id="timer-select">
+                    <option value="10">10 Minutes</option>
+                    <option value="20">20 Minutes</option>
+                    <option value="30">30 Minutes</option>
+                    <option value="45">45 Minutes</option>
+                    <option value="60">60 Minutes</option>
+                </select>
+                <h2 id="timer">00:00</h2>
+                <button id="start-timer">Start Study Session</button>
+            </div>
+
+            <!-- Streak Calendar Section -->
+            <h2>Streak Calendar</h2>
+            <div id="calendar"></div>
+
+            <!-- Ambient Sound Section -->
+            <h2>Ambient Sound</h2>
+            <select id="sound-select">
+                <option value="cafe">☕ Cozy Cafe</option>
+                <option value="rain">🌧️ Soft Rain</option>
+                <option value="lofi">🎶 Lo-fi Beats</option>
+            </select>
+            <button onclick="toggleSound()">Play / Pause Sound</button>
+
+            <!-- Mascot Section -->
+            <div id="mascot-container">
+                <img id="mascot" src="C:/Users/sanyukta/Desktop/MyProject/Aesthetic Study Timer/FOXDUNGEE.jpeg" alt="Cute Mascot" />
+                <p id="mascot-message">Let's Get Studying!!!</p>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
