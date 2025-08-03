@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aesthetic Study Timer</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Aesthetic Study Timer</h1>
+
+    <!-- Timer Section -->
+    <div id="timer-container">
+      <h2>Choose Your Timer</h2>
+      <select id="timer-select">
+        <option value="10">10 Minutes</option>
+        <option value="20">20 Minutes</option>
+        <option value="30">30 Minutes</option>
+        <option value="45">45 Minutes</option>
+        <option value="60">60 Minutes</option>
+      </select>
+      <h2 id="timer">00:00</h2>
+      <button id="start-timer">Start Study Session</button>
+    </div>
+
+    <!-- Streak Calendar Section -->
+    <h2>Streak Calendar</h2>
+    <div id="calendar">
+      <!-- Calendar will be injected here by JavaScript -->
+    </div>
+
+    <!-- Ambient Sound Section -->
+    <h2>Ambient Sound</h2>
+    <select id="sound-select">
+      <option value="cafe">☕ Cozy Cafe</option>
+      <option value="rain">🌧️ Soft Rain</option>
+      <option value="lofi">🎶 Lo-fi Beats</option>
+    </select>
+    <button onclick="toggleSound()">Play / Pause Sound</button>
+
+    <!-- Mascot Section -->
+    <div id="mascot-container">
+      <div id="mascot-message">Let's Get Studying!!!</div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

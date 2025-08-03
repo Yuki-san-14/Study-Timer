@@ -1,0 +1,82 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fceaff;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Timer Styling */
+#timer-container h2 {
+  color: #ff7eb3;
+}
+
+#timer {
+  font-size: 3em;
+  color: #7357c2;
+}
+
+/* Calendar Styling */
+#calendar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.calendar-table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.calendar-table th, .calendar-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.calendar-table th {
+  background-color: #ff7eb3;
+  color: #fff;
+}
+
+.calendar-day.completed {
+  background: #a1eafb;
+  color: #fff;
+  box-shadow: 0 0 5px #5fa9d8;
+}
+
+.calendar-day.today {
+  border: 2px solid #ff7eb3;
+}
+
+/* Mascot Styling */
+#mascot-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#mascot-message {
+  font-size: 1.2em;
+  color: #ff7eb3;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+@keyframes floaty {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+}
